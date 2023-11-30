@@ -1,0 +1,111 @@
+body,
+h1,
+form,
+button {
+  text-align: center;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+input[type="file"] {
+  width: calc(100% - 40px);
+  margin: 20px 0;
+  padding: 10px 20px;
+}
+
+.compare-button {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.compare-button:hover {
+  background-color: #0056b3;
+}
+
+#results {
+  max-width: 100px; /* Sets a maximum width for the images */
+  max-height: 100px; /* Sets a maximum height for the images */
+  /* Maintains the aspect ratio */
+  margin-right: 10px; /* Existing margin */
+  border-radius: 8px;
+  /* max-width: 600px;
+  margin: 20px auto;
+  padding: 10px;
+  border: 1px solid #ccc; */
+}
+
+.face-comparison {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.face-comparison img {
+  width: 100px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.face-comparison .similarity {
+  flex-grow: 1;
+  font-size: 1.2em;
+}
+
+.face-comparison .similarity-bar {
+  height: 10px;
+  background: blue;
+  width: 0%; /* Dynamically set based on similarity */
+}
+
+.equality-sign {
+  font-size: 2em;
+  margin: 0 20px;
+}
+
+.upload-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.file-upload-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px; /* Creates space between the file inputs */
+}
+
+.file-upload-wrapper {
+  border: 2px dashed #ccc;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+}
+
+/* Add responsive design */
+@media (max-width: 768px) {
+  .face-comparison {
+    flex-direction: column;
+  }
+  .face-comparison img {
+    margin-bottom: 10px;
+  }
+  .face-comparison .similarity-bar {
+    width: 50%; /* Adjust for mobile */
+  }
+}
+@media (max-width: 768px) {
+  .file-upload-container {
+    flex-direction: column;
+  }
+}

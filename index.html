@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Third Eye</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Third Eye: The Ultimate Face Detection Tool</h1>
+      <marquee
+        >The fastest and easiest tool to match faces between two photos, built
+        fully with the help of cloud services.</marquee
+      >
+      <form id="uploadForm" class="upload-form">
+        <div class="file-upload-container">
+          <div class="file-upload-wrapper" id="sourceImageWrapper">
+            <label for="sourceImage">Source Image:</label>
+            <input
+              type="file"
+              id="sourceImage"
+              name="sourceImage"
+              accept="image/*"
+            />
+          </div>
+          <div class="file-upload-wrapper" id="targetImageWrapper">
+            <label for="targetImage">Target Image:</label>
+            <input
+              type="file"
+              id="targetImage"
+              name="targetImage"
+              accept="image/*"
+            />
+          </div>
+        </div>
+        <button type="submit" class="compare-button" onclick="uploadImages()">
+          Compare Faces
+        </button>
+      </form>
+      <div id="results" style="height: 30px; width: 50px"></div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
