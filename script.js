@@ -1,8 +1,7 @@
 function uploadImages() {
   let sourceImage = document.getElementById("sourceImage").files[0];
   let targetImage = document.getElementById("targetImage").files[0];
-
-  console.log("Upload function");
+  
   if (!sourceImage || !targetImage) {
     console.error("Both images need to be selected");
     return;
