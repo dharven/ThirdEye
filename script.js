@@ -84,7 +84,7 @@ function displayResults(data) {
     comparisonContainer.className = "face-comparison";
 
     const sourceImg = document.createElement("img");
-    sourceImg.src = "https://inputimages3.s3.amazonaws.com/source.jpg";
+    sourceImg.src = "https://input-images-dh4.s3.amazonaws.com/source.jpg";
     comparisonContainer.appendChild(sourceImg);
 
     const equalitySign = document.createElement("div");
@@ -93,7 +93,7 @@ function displayResults(data) {
     comparisonContainer.appendChild(equalitySign);
 
     const targetImg = document.createElement("img");
-    targetImg.src = "https://inputimages3.s3.amazonaws.com/target.jpg";
+    targetImg.src = "https://input-images-dh4.s3.amazonaws.com/target.jpg";
     comparisonContainer.appendChild(targetImg);
 
     const similarityDiv = document.createElement("div");
